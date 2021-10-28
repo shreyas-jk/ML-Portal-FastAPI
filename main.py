@@ -39,7 +39,8 @@ class DownloadFile(BaseModel):
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return os.path.dirname('test.csv')
+    # return {"message": "Hello World"}
 
 @app.get("/get_dataset_list")
 async def get_dataset_list():

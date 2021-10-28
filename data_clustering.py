@@ -1,6 +1,7 @@
 from sklearn.cluster import KMeans
 from kneed import KneeLocator
 from file_operation import FileOperation
+import os
 
 class KMeansClustering:
     def __init__(self, data):
@@ -20,5 +21,7 @@ class KMeansClustering:
         self.y_kmeans = self.kmeans.fit_predict(self.data)
         self.data['Cluster'] = self.y_kmeans
         file_op = FileOperation()
+        # file_path = "/tmp/not_exist/filenames.pkl"
+        # os.makedirs(os.path.dirname(file_path), exist_ok=True)
         file_op.save_model(self.kmeans, './Saved_Data/clustering_models/KMeans.pkl')
         return self.data
