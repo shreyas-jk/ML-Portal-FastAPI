@@ -127,20 +127,30 @@ async def get_prediction_files_list():
 
 @app.get("/get_preprocessing_logs")
 async def get_preprocessing_logs():
-    file = open("Log_Files/data_preprocessing.txt","r+")
-    data = file.readlines()
-    file.close()
-    return data
+    log_file = "Log_Files/data_preprocessing.txt"
+    if util.file_if_exists(log_file):
+        with open(log_file,"r+") as file:
+            return util.preprocess_logs(file.readlines())
+    else:
+        return None
 
 @app.get("/get_prediction_logs")
 async def get_prediction_logs():
-    with open("Log_Files/prediction_validation.txt","r+") as file:
-        return file.readlines()
+    log_file = "Log_Files/prediction_validation.txt"
+    if util.file_if_exists(log_file):
+        with open(log_file,"r+") as file:
+            return util.preprocess_logs(file.readlines())
+    else:
+        return None
 
 @app.get("/get_training_logs")
 async def get_training_logs():
-    with open("Log_Files/training_pipeline.txt","r+") as file:
-        return file.readlines()
+    log_file = "Log_Files/training_pipeline.txt"
+    if util.file_if_exists(log_file):
+        with open(log_file,"r+") as file:
+            return util.preprocess_logs(file.readlines())
+    else:
+        return None
     
 @app.post("/download_file")
 async def download_file(file_info : DownloadFile): 
@@ -148,14 +158,8 @@ async def download_file(file_info : DownloadFile):
         0: './Prediction_Results/',
         1: './Processed_Files/',
     }
-    file_path =switcher.get(int(file_info.source)) + file_info.file_name
-    return FileResponse(file_path, media_type='application/octet-stream')
-    # file_path = switcher.get(int(file_info.source)) + file_info.file_name
-    # def iterfile():  
-    #     with open(file_path, mode="rb") as file_like:  
-    #         yield from file_like
-    # return StreamingResponse(iterfile())
-    # return FileResponse(path=switcher.get(int(file_info.source)) + file_info.file_name, media_type='application/text', filename=file_info.file_name)
+    file_path = switcher.get(int(file_info.source)) + file_info.file_name
+    return FileResponse(file_path, media_type="application/x-zip-compressed", headers={'Content-Disposition': f'attachment; filename="{file_info.file_name}"'})
 
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000)

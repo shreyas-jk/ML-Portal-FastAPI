@@ -37,3 +37,14 @@ def update_sql(query):
     with sqlite3.connect('./Database/etesql.db') as conn:
         conn.execute(query)
         conn.commit()
+    
+def preprocess_logs(text):
+    data = ''.join(text)
+    data = '<pre>' + str(data).replace('[','').replace(']','') + '</pre>'
+    return data
+
+def file_if_exists(file_path):
+    if os.path.exists(file_path):
+        return True
+    else:
+        return False
