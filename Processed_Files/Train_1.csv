@@ -7,3 +7,11 @@ FDP49,9,Regular,0.069088961,Breakfast,56.3614,,,,,,2
 ,,,,Dairy,55.7956,OUT010,1998,,Tier 3,Grocery Store,3
 ,,,,Health and Hygiene,96.4436,OUT018,2009,Medium,Tier 3,Supermarket Type2,3
 NCP18,,Low Fat,0.028459761,Household,149.9708,OUT027,1985,Medium,Tier 3,Supermarket Type3,3
+FDA15,9.3,Low Fat,0.016047301,Dairy,249.8092,OUT049,1999,Medium,Tier 1,Supermarket Type1,1
+DRC01,5.92,Regular,0.019278216,Soft Drinks,48.2692,OUT018,2009,Medium,Tier 3,Supermarket Type2,1
+FDS46,17.6,Regular,0.047257328,Snack Foods,,,,,,,1
+FDF32,16.35,Low Fat,0.0680243,Fruits and Vegetables,196.4426,,,,,,2
+FDP49,9,Regular,0.069088961,Breakfast,56.3614,,,,,,2
+,,,,Dairy,55.7956,OUT010,1998,,Tier 3,Grocery Store,3
+,,,,Health and Hygiene,96.4436,OUT018,2009,Medium,Tier 3,Supermarket Type2,3
+NCP18,,Low Fat,0.028459761,Household,149.9708,OUT027,1985,Medium,Tier 3,Supermarket Type3,3
