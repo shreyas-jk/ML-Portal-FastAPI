@@ -91,7 +91,7 @@ async def train_pipeline(background_tasks: BackgroundTasks):
     return {'status':'OK'}
 
 def training():
-    util.update_sql("UPDATE tbl_train_pipeline set IsRunning = 1 where ID = 1;")
+    util.update_sql("UPDATE tbl_train_pipeline set IsRunning = 1, LastRunOn = strftime('%Y-%m-%d %H:%M:%S', datetime('now')) where ID = 1;")
     cursor = util.execute_sql("SELECT * FROM tbl_default_dataset;")
     import_datafile = util.cursor_to_json(cursor)[0]
     path = processed_path + import_datafile['FileName']
