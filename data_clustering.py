@@ -20,5 +20,5 @@ class KMeansClustering:
         self.y_kmeans = self.kmeans.fit_predict(self.data)
         self.data['Cluster'] = self.y_kmeans
         file_op = FileOperation()
-        file_op.save_model(self.kmeans, './Saved_Data/clustering_models/' + 'KMeans')
+        file_op.save_model(self.kmeans, './Saved_Data/clustering_models/KMeans')
         return self.data

@@ -36,7 +36,7 @@ class Prediction():
         self.logger.write_log(self.file_object, 'Preprocessing routine completed successfully')
 
         file_op = FileOperation()
-        kmean_model = file_op.load_model('./Saved_Data/clustering_models/' + 'Kmeans')
+        kmean_model = file_op.load_model('./Saved_Data/clustering_models/Kmeans')
         clusters = kmean_model.predict(data)
 
         data['clusters'] = clusters

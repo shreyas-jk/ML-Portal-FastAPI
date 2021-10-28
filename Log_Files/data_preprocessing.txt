@@ -1,1 +1,5 @@
-A
+29/10/2021 00:36:07 Imputing numerical features
+29/10/2021 00:36:07 Over sampling dataset using RandomOverSampler
+29/10/2021 00:36:07 Encoder categorical features using OneHotEncoder
+29/10/2021 00:36:58 Imputing numerical features
+29/10/2021 00:36:58 Encoder categorical features using OneHotEncoder
