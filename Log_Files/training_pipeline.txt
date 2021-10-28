@@ -1,21 +1,21 @@
-28/10/2021 21:43:58 Loading data file started
-28/10/2021 21:43:58 Data file loaded successfully
-28/10/2021 21:43:58 Preprocessing routine started
-28/10/2021 21:43:58 Preprocessing routine completed successfully
-28/10/2021 21:43:58 Starting Clustering routine
-28/10/2021 21:44:01 Calculating cluster number using Elbow method
-28/10/2021 21:44:01 Clustering dataset completed successfully
-28/10/2021 21:44:01 Starting cluster based modeling
-28/10/2021 21:44:01 Train Test data split successfully for cluster 0
-28/10/2021 21:44:01 Starting model selection for cluster 0
-28/10/2021 21:44:14 Best model selected successfully for cluster 0
-28/10/2021 21:44:14 Model saved successfully for cluster 0
-28/10/2021 21:44:14 Train Test data split successfully for cluster 2
-28/10/2021 21:44:14 Starting model selection for cluster 2
-28/10/2021 21:44:25 Best model selected successfully for cluster 2
-28/10/2021 21:44:25 Model saved successfully for cluster 2
-28/10/2021 21:44:25 Train Test data split successfully for cluster 1
-28/10/2021 21:44:25 Starting model selection for cluster 1
-28/10/2021 21:44:36 Best model selected successfully for cluster 1
-28/10/2021 21:44:36 Model saved successfully for cluster 1
-28/10/2021 21:44:36 Training process completed successfully.
+28/10/2021 22:22:58 Loading data file started
+28/10/2021 22:22:58 Data file loaded successfully
+28/10/2021 22:22:58 Preprocessing routine started
+28/10/2021 22:22:58 Preprocessing routine completed successfully
+28/10/2021 22:22:58 Starting Clustering routine
+28/10/2021 22:23:00 Calculating cluster number using Elbow method
+28/10/2021 22:23:01 Clustering dataset completed successfully
+28/10/2021 22:23:01 Starting cluster based modeling
+28/10/2021 22:23:01 Train Test data split successfully for cluster 0
+28/10/2021 22:23:01 Starting model selection for cluster 0
+28/10/2021 22:23:12 Best model selected successfully for cluster 0
+28/10/2021 22:23:12 Model saved successfully for cluster 0
+28/10/2021 22:23:12 Train Test data split successfully for cluster 1
+28/10/2021 22:23:12 Starting model selection for cluster 1
+28/10/2021 22:23:24 Best model selected successfully for cluster 1
+28/10/2021 22:23:24 Model saved successfully for cluster 1
+28/10/2021 22:23:24 Train Test data split successfully for cluster 2
+28/10/2021 22:23:24 Starting model selection for cluster 2
+28/10/2021 22:23:35 Best model selected successfully for cluster 2
+28/10/2021 22:23:35 Model saved successfully for cluster 2
+28/10/2021 22:23:35 Training process completed successfully.
