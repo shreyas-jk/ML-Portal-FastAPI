@@ -96,6 +96,7 @@ def training():
     cursor = util.execute_sql("SELECT * FROM tbl_default_dataset;")
     import_datafile = util.cursor_to_json(cursor)[0]
     path = processed_path + import_datafile['FileName']
+    print("Training file path: ", path)
     util.clear_all_models()
     util.clear_logs_files()
     train_pipe = TrainingPipeline()
