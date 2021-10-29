@@ -160,6 +160,7 @@ async def download_file(file_info : DownloadFile):
         1: './Processed_Files/',
     }
     file_path = switcher.get(int(file_info.source)) + file_info.file_name
+    print("Download file path: ", file_path)
     return FileResponse(file_path, media_type="application/x-zip-compressed", headers={'Content-Disposition': f'attachment; filename="{file_info.file_name}"'})
 
 if __name__ == "__main__":
