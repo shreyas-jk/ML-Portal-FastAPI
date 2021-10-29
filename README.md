@@ -1,6 +1,7 @@
 # Machine Learning Portal
 
 - [Goal](#Goal)
+- [Application](#Application)
 - [Workflow](#Workflow)
 - [Process Design](#Process)
 - [Live Project](#Live)
