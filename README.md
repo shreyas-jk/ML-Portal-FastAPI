@@ -8,6 +8,19 @@
 # Goal
 A complete end-to-end machine learning portal that covers processes starting from model training to model predicting results using FastAPI. 
 
+# Application
+### Main Menu
+- Dataset: Set default dataset from the list that will be used for training and building the models.
+- Train: Start the training process
+- Prediction: Upload test dataset to get predictions.
+
+Download sample test data (<a name = "">sample_test.csv</a>) for testing the prediction module.
+
+### Logger Menu
+- Data Preprocessing: Logs generated during preprocessing process.
+- Training: Logs generated during training process.
+- Prediction: Logs generated during prediction process.
+
 # Workflow
 - Import/upload dataset
 - Preprocessing
