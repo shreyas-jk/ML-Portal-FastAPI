@@ -39,8 +39,7 @@ class DownloadFile(BaseModel):
 
 @app.get("/")
 async def root():
-    return os.path.dirname('test.csv')
-    # return {"message": "Hello World"}
+    return {"message": "Hello World"}
 
 @app.get("/get_dataset_list")
 async def get_dataset_list():
@@ -102,18 +101,6 @@ def training():
     train_pipe = TrainingPipeline()
     train_pipe.train_model(path)
     util.update_sql("UPDATE tbl_train_pipeline set IsRunning = 0 where ID = 1;")
-
-# @app.get("/train_pipeline")
-# async def train_pipeline():
-#     util.update_sql("UPDATE tbl_train_pipeline set IsRunning = 1 where ID = 1;")
-#     cursor = util.execute_sql("SELECT * FROM tbl_default_dataset;")
-#     import_datafile = util.cursor_to_json(cursor)[0]
-#     path = processed_path + import_datafile['FileName']
-#     util.clear_all_models()
-#     util.clear_logs_files()
-#     train_pipe = TrainingPipeline()
-#     train_pipe.train_model(path)
-#     util.update_sql("UPDATE tbl_train_pipeline set IsRunning = 0 where ID = 1;")
 
 @app.get("/get_prediction_files_list")
 async def get_prediction_files_list():

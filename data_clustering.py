@@ -21,7 +21,5 @@ class KMeansClustering:
         self.y_kmeans = self.kmeans.fit_predict(self.data)
         self.data['Cluster'] = self.y_kmeans
         file_op = FileOperation()
-        # file_path = "/tmp/not_exist/filenames.pkl"
-        # os.makedirs(os.path.dirname(file_path), exist_ok=True)
         file_op.save_model(self.kmeans, './Clustering_Models/KMeans.pkl')
         return self.data
