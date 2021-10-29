@@ -26,5 +26,5 @@ A complete end-to-end machine learning portal that covers processes starting fro
 # Process Design
 ![Design](https://github.com/shreyas-jk/ML-API/blob/main/images/flow.png)
 
-#Live Project
+# Live Project
 https://machine-learning-portal.herokuapp.com
