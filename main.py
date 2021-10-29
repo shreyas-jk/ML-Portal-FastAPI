@@ -16,7 +16,7 @@ import sqlite3
 app = FastAPI()
 origins = ["*"]
 processed_path = 'Processed_Files/'
-prediction_path = 'Prediction_Results/'
+prediction_path = './Prediction_Results/'
 validation_path = 'Validation_Files/'
 
 app.add_middleware(
