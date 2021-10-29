@@ -2,8 +2,8 @@
 
 - [Goal](#Goal)
 - [Workflow](#Workflow)
-- [Process Design](#ProcessDesign)
-- [Live Project](#LiveProject)
+- [Process Design](#Process Design)
+- [Live Project](#Live Project)
 
 # Goal
 A complete end-to-end machine learning portal that covers processes starting from model training to model predicting results using FastAPI. 
