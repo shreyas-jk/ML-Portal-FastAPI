@@ -129,7 +129,7 @@ async def get_prediction_files_list():
 
 @app.get("/get_preprocessing_logs")
 async def get_preprocessing_logs():
-    log_file = "Log_Files/data_preprocessing.txt"
+    log_file = "./Log_Files/data_preprocessing.txt"
     if util.file_if_exists(log_file):
         with open(log_file,"r+") as file:
             return util.preprocess_logs(file.readlines())
@@ -138,7 +138,7 @@ async def get_preprocessing_logs():
 
 @app.get("/get_prediction_logs")
 async def get_prediction_logs():
-    log_file = "Log_Files/prediction_validation.txt"
+    log_file = "./Log_Files/prediction_validation.txt"
     if util.file_if_exists(log_file):
         with open(log_file,"r+") as file:
             return util.preprocess_logs(file.readlines())
@@ -147,7 +147,7 @@ async def get_prediction_logs():
 
 @app.get("/get_training_logs")
 async def get_training_logs():
-    log_file = "Log_Files/training_pipeline.txt"
+    log_file = "./Log_Files/training_pipeline.txt"
     if util.file_if_exists(log_file):
         with open(log_file,"r+") as file:
             return util.preprocess_logs(file.readlines())

@@ -19,7 +19,7 @@ def clear_logs_files():
         delete_file(folder + files)
 
 def clear_all_models():
-    folder_list = ['models/', 'clustering/']
+    folder_list = ['./models/', './clustering/']
     for folder in folder_list:
         for files in os.listdir(folder):
             delete_file(folder + files)
