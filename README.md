@@ -23,6 +23,6 @@ A complete end-to-end machine learning portal that covers processes starting fro
   - Download prediction results
   
 # Process Design
+![Design](https://github.com/shreyas-jk/ML-API/blob/main/images/flow.png)
 
-
-[Live Demo]('https://machine-learning-portal.herokuapp.com/')
+[Live Demo](https://machine-learning-portal.herokuapp.com)
