@@ -19,7 +19,7 @@ class Prediction():
         return pd.read_csv(path)
     
     def get_best_model_for_cluster(self, cluster_no):
-        for file in os.listdir('./Models/'):
+        for file in os.listdir('./models/'):
             model_name_cluster = file.split('_')[1][1:]
             if (cluster_no == model_name_cluster):
                 return file
@@ -36,7 +36,7 @@ class Prediction():
         self.logger.write_log(self.file_object, 'Preprocessing routine completed successfully')
 
         file_op = FileOperation()
-        kmean_model = file_op.load_model('Clustering_Model/Kmeans.txt')
+        kmean_model = file_op.load_model('clustering/Kmeans.txt')
         clusters = kmean_model.predict(data)
 
         data['clusters'] = clusters
@@ -46,7 +46,7 @@ class Prediction():
             cluster_subset = data[data['clusters']==i]
             cluster_subset = cluster_subset.drop(['clusters'],axis=1)
             model_file_name = self.get_best_model_for_cluster(str(i))
-            model = file_op.load_model('./Models/' + model_file_name)
+            model = file_op.load_model('./models/' + model_file_name)
             result = model.predict(cluster_subset)
             prediction_list.extend(result)
         results = pd.DataFrame(list(zip(prediction_list)), columns=['Predictions'])

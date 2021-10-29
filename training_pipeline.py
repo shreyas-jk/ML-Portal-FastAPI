@@ -53,7 +53,7 @@ class TrainingPipeline:
             self.logger.write_log(self.file_object, 'Best model selected successfully for cluster ' + str(i))
 
             file_op = FileOperation()
-            save_file_name = './Models/' + best_model_name + '_C' + str(i) + '_' + str(best_model_score)[:4] + '.txt'
+            save_file_name = './models/' + best_model_name + '_C' + str(i) + '_' + str(best_model_score)[:4] + '.txt'
             file_op.save_model(best_model, save_file_name)
             self.logger.write_log(self.file_object, 'Model saved successfully for cluster ' + str(i))
         self.logger.write_log(self.file_object, 'Training process completed successfully.')
