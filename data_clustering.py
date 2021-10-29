@@ -23,5 +23,5 @@ class KMeansClustering:
         file_op = FileOperation()
         # file_path = "/tmp/not_exist/filenames.pkl"
         # os.makedirs(os.path.dirname(file_path), exist_ok=True)
-        file_op.save_model(self.kmeans, './Clustering_Model/KMeans.pkl')
+        file_op.save_model(self.kmeans, './Clustering_Model/KMeans.txt')
         return self.data
