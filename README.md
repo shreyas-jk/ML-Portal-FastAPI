@@ -2,8 +2,8 @@
 
 - [Goal](#Goal)
 - [Workflow](#Workflow)
-- [Process Design](#Process Design)
-- [Live Project](#Live Project)
+- [Process Design](#Process)
+- [Live Project](#Live)
 
 # Goal
 A complete end-to-end machine learning portal that covers processes starting from model training to model predicting results using FastAPI. 
@@ -23,8 +23,8 @@ A complete end-to-end machine learning portal that covers processes starting fro
   - Saving best model
   - Download prediction results
   
-# Process Design
+# Process Design <a name = "Process"></a>
 ![Design](https://github.com/shreyas-jk/ML-API/blob/main/images/flow.png)
 
-# Live Project
+# Live Project <a name = "Live"></a>
 https://machine-learning-portal.herokuapp.com
