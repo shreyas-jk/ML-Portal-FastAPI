@@ -7,7 +7,6 @@
 # Goal
 A complete end-to-end machine learning portal that covers processes starting from model training to model predicting results using FastAPI. 
 
-
 # Workflow
 - Import/upload dataset
 - Preprocessing
@@ -26,4 +25,4 @@ A complete end-to-end machine learning portal that covers processes starting fro
 # Process Design
 
 
-## [Live Demo]('https://machine-learning-portal.herokuapp.com/')
+[Live Demo]('https://machine-learning-portal.herokuapp.com/')
