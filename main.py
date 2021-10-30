@@ -95,12 +95,12 @@ def training():
     cursor = util.execute_sql("SELECT * FROM tbl_default_dataset;")
     import_datafile = util.cursor_to_json(cursor)[0]
     path = processed_path + import_datafile['FileName']
-    print("Training file path: ", path)
     util.clear_all_models()
     util.clear_logs_files()
     train_pipe = TrainingPipeline()
     train_pipe.train_model(path)
     util.update_sql("UPDATE tbl_train_pipeline set IsRunning = 0 where ID = 1;")
+    return {'status':'OK'}
 
 @app.get("/get_prediction_files_list")
 async def get_prediction_files_list():
@@ -132,6 +132,11 @@ async def get_prediction_logs():
     else:
         return None
 
+@app.get("/reset_train")
+async def reset_train():
+    util.update_sql("UPDATE tbl_train_pipeline set IsRunning = 0 where ID = 1;")
+    return {'status':'OK'}
+
 @app.get("/get_training_logs")
 async def get_training_logs():
     log_file = "./Log_Files/training_pipeline.txt"
@@ -148,7 +153,6 @@ async def download_file(file_info : DownloadFile):
         1: './Processed_Files/',
     }
     file_path = switcher.get(int(file_info.source)) + file_info.file_name
-    print("Download file path: ", file_path)
     return FileResponse(file_path, media_type="application/x-zip-compressed", headers={'Content-Disposition': f'attachment; filename="{file_info.file_name}"'})
 
 if __name__ == "__main__":
