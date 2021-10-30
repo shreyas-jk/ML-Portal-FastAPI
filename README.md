@@ -15,7 +15,7 @@ A complete end-to-end machine learning portal that covers processes starting fro
 - Train: Start the training process
 - Prediction: Upload test dataset to get predictions.
 
-Save sample test data ( <a name="https://raw.githubusercontent.com/shreyas-jk/ML-API/main/sample_test.csv">sample_test.csv</a> ) for testing the prediction module.
+Save sample test data ( [sample_test.csv](https://raw.githubusercontent.com/shreyas-jk/ML-API/main/sample_test.csv) ) for testing the prediction module.
 
 ### Logger Menu
 - Data Preprocessing: Logs generated during preprocessing process.
