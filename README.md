@@ -44,5 +44,4 @@ Save sample test data ([sample_test.csv](https://github.com/shreyas-jk/ML-Portal
 https://machine-learning-portal.herokuapp.com
 
 # YouTube Demo
-[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
 https://www.youtube.com/watch?v=p7jGqMkxRG4
